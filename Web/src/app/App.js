@@ -26,7 +26,6 @@ class App extends Component {
     return (
         <div className="main-content">
           {navbarComponent}
-          <div id="modal-backdrop"></div>
           <div className="">
             <div className="">
               <AppRoutes/>

@@ -6,33 +6,32 @@ export class Login extends Component {
   constructor(props) {
     super();
     this.state = {
-      inputData:{
-        email:"",
-        password:"",
+      inputData: {
+        email: "",
+        password: "",
       }
     }
   }
   onChangeValue(type, event) {
     if (event) {
-        let value = ""
-        if (event.target) {
-            value = event.target.value
-        } else {
-            value = event.value
-        }
+      let value = ""
+      if (event.target) {
+        value = event.target.value
+      } else {
+        value = event.value
+      }
 
-        this.state.inputData[type] = value
+      this.state.inputData[type] = value
 
-        this.setState({});
+      this.setState({});
     } else {
-        this.state.inputData[type] = ''
-        this.setState({});
+      this.state.inputData[type] = ''
+      this.setState({});
     }
-    console.log(this.state.inputData)
-}
-submit(){
-  this.props.history.push('/dashboard');
-}
+  }
+  submit() {
+    this.props.history.push('/dashboard');
+  }
   render() {
     return (
       <div>
@@ -43,13 +42,13 @@ submit(){
                 <h6 className="">Sign in to continue.</h6>
                 <form className="pt-3">
                   <div className="form-group">
-                    <input onChange={this.onChangeValue.bind(this, "email")}  type="email" className="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email" />
+                    <input onChange={this.onChangeValue.bind(this, "email")} type="email" className="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email" />
                   </div>
                   <div className="form-group">
-                    <input onChange={this.onChangeValue.bind(this, "password")}  type="password" className="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" />
+                    <input onChange={this.onChangeValue.bind(this, "password")} type="password" className="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" />
                   </div>
 
-                  
+
                   <div className="mt-3">
                     <div onClick={this.submit.bind(this)} className="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" to="/dashboard">SIGN IN</div>
                   </div>
@@ -60,7 +59,7 @@ submit(){
               </div>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
     )
   }
