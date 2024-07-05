@@ -2,7 +2,11 @@
 body{
     margin: 0;
     margin-top: 0px;
-    
+    overflow-x: hidden;
+}
+.row1{
+    display: flex;
+    flex-wrap: wrap;
 }
 #modal-backdrop{
     background-color: black;
@@ -138,8 +142,8 @@ body{
     // height: 100px;
     width: 400px;
     background-color: white;
-    top:45px;
-    right: -35px;
+    top:6px;
+    right: 0px;
     border-radius: 10px;
     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
     max-height: 500px;
@@ -204,5 +208,19 @@ body{
     }
     .user{
         font-weight: 600;
+        font-size: 13px;
     }
+    .title{
+        font-size: 13px;
+        overflow: hidden;
+        height: 20px;
+        width: 100%;
+    }
+}
+.logout-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }

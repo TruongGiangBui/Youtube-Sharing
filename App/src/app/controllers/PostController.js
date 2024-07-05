@@ -10,7 +10,7 @@ class PostController {
     async shareVideo(req, res, next) {
         try {
             let data = req.body
-            for (let key of ['videoId']) {
+            for (let key of ['videoId','title','thumbnail']) {
                 if (!req.body[key]) {
                     return res.status(400).send({
                         message: key + ' is required'
@@ -22,9 +22,12 @@ class PostController {
                 videoId: req.body.videoId,
                 title: req.body.title,
                 description: req.body.description,
-                userId: req.user.id
+                thumbnail: req.body.thumbnail,
+                userId: req.user.id,
+                email: req.user.email,
             })
             post.save()
+            global.io.emit(`notification`, post);
             return res.status(200).send({
                 message: "Successfully",
             })
@@ -45,6 +48,20 @@ class PostController {
             })
         } catch (err) {
             logger.log('error', 'getNewFeed error: ', err)
+            return res.status(500).send({
+                message: "Server Error"
+            })
+        }
+    }
+    async getNotification(req, res, next) {
+        try {
+            let posts= await Post.find().sort({ updatedAt: -1 }).limit(10);
+            return res.status(200).send({
+                message: "Successfully",
+                data:posts
+            })
+        } catch (err) {
+            logger.log('error', 'getNotification error: ', err)
             return res.status(500).send({
                 message: "Server Error"
             })

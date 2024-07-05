@@ -5,9 +5,8 @@ import axios from 'axios';
 import toast, { Toaster } from 'react-hot-toast';
 import { FaTimes } from "react-icons/fa";
 
-
-import configData from "../../config.json";
-const SERVER_URL = configData.SERVER_URL
+import moment from 'moment';
+import callApi from '../utils/Restful';
 
 export class Dashboard extends Component {
   constructor(props) {
@@ -17,28 +16,52 @@ export class Dashboard extends Component {
         videoUrl: "",
         description: "",
         title: "",
-        videoID: "",
+        videoId: "",
+        thumbnail: "",
       },
+      posts: [],
       showShareVideo: false
     }
   }
-  // const [isConnected, setIsConnected] = useState(socket.connected);
-  // useEffect(() => {
-  //   function onConnect() {
-  //     console.log("Connected Dashboard")
-  //     setIsConnected(true);
-  //   }
-  //   function onDisconnect() {
-  //     setIsConnected(false);
-  //   }
 
-  //   socket.on('connect', onConnect);
-  //   socket.on('disconnect', onDisconnect);
-  //   return () => {
-  //     socket.off('connect', onConnect);
-  //     socket.off('disconnect', onDisconnect);
-  //   };
-  // }, []);
+  notification(data) {
+    toast((t) => (
+      <div className='notify-item' style={{border:"none",margin:0}}>
+
+        <img className='notify-thumnail' src={data.thumbnail}></img>
+
+        <div className='notify-item-text'>
+          <div className='time'>{moment(data.updatedAt).format('HH:MM')}</div>
+          <div className='user'>{data.email} shared a video</div>
+          <div className='title'>{data.title}</div>
+        </div>
+      </div>
+    ), {
+      duration: 5000, // Auto close duration in milliseconds
+      position: "bottom-right",
+    });
+  }
+  async componentDidMount() {
+    function onConnect() {
+      console.log("Connected")
+    }
+    function onDisconnect() {
+      console.log("Disconnected")
+    }
+    socket.on('connect', onConnect);
+    socket.on('notification', this.notification);
+    socket.on('disconnect', onDisconnect);
+    this.loadPosts(0)
+  }
+  async loadPosts(frompost) {
+    let res = await callApi('/api/post/newpost', 'GET', { frompost: frompost })
+    if (res.status == 200) {
+      this.setState({
+        posts: res.data.data
+      })
+    }
+  }
+
   onChangeValue(type, event) {
     if (event) {
       let value = ""
@@ -56,16 +79,32 @@ export class Dashboard extends Component {
       this.setState({});
     }
   }
-  addPost() {
-
+  async shareVideo() {
+    await this.onBlurUrl()
+    let res = await callApi('/api/post/shareVideo', 'POST', this.state.inputData)
+    if (res.status == 200) {
+      toast.success(res.data.message, {
+        duration: 5000,
+        position: "top-center",
+      })
+      this.loadPosts(0)
+      this.closeShareVideo()
+    } else {
+      toast.error(res.data.message, {
+        duration: 5000,
+        position: "top-center",
+      })
+    }
   }
   reset() {
     this.setState({
+      ...this.state,
       inputData: {
         videoUrl: "",
         description: "",
         title: "",
         videoID: "",
+        thumbnail: "",
       },
     })
   }
@@ -84,10 +123,10 @@ export class Dashboard extends Component {
     let url = this.state.inputData.videoUrl
 
     if (url) {
-      let videoID = this.validateYouTubeUrl(url)
-      this.state.inputData.videoID = videoID;
+      let videoId = this.validateYouTubeUrl(url)
+      this.state.inputData.videoId = videoId;
       this.setState({})
-      if (!videoID) {
+      if (!videoId) {
         toast.error('Invalid Video URL', {
           duration: 5000,
           position: "top-right",
@@ -96,8 +135,9 @@ export class Dashboard extends Component {
       } else {
         let info = await axios.get(`https://www.youtube.com/oembed?format=json&url=${url}`)
         info = info.data
-        console.log('video info', info)
+        // console.log('video info', info)
         this.state.inputData.title = info.title;
+        this.state.inputData.thumbnail = info.thumbnail_url
         this.setState({})
       }
       console.log(this.state.inputData)
@@ -123,7 +163,7 @@ export class Dashboard extends Component {
           <div>
           </div>
         </div>
-        <div className="row ">
+        <div className="row1 ">
           <div className='col-md-3'></div>
           <div className='col-md-6'>
             <div className="card">
@@ -160,13 +200,13 @@ export class Dashboard extends Component {
                           className="form-control input-post-url"
                           placeholder="Description" />
                       </div>
-                      {this.state.inputData.videoID &&
+                      {this.state.inputData.videoId &&
                         <div className='view-post'>
                           <iframe
                             width="100%"
                             height="400px"
                             // height="315"
-                            src={`https://www.youtube.com/embed/${this.state.inputData.videoID}`}
+                            src={`https://www.youtube.com/embed/${this.state.inputData.videoId}`}
                             title="YouTube video player"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -176,57 +216,49 @@ export class Dashboard extends Component {
                           </iframe>
                         </div>
                       }
-                      <div onClick={this.addPost.bind(this)} className="btn btn-post">Share video</div>
+                      <div onClick={this.shareVideo.bind(this)} className="btn btn-post">Share video</div>
                     </div>
 
                   </div>
                 }
               </div>
             </div>
-            <div className="card">
-              <div className="card-body view-post">
-                <div className='col-md-12 flex'>
-                  <div className='col-md-1 '>
-                    <img className='view-post-avatar' src="avt.jpeg"></img>
+            {this.state.posts.map((post) => {
+              return <div className="card">
+                <div className="card-body view-post">
+                  <div className='col-md-12 flex'>
+                    <div className='col-md-1 '>
+                      <img className='view-post-avatar' src="avt.jpeg"></img>
+                    </div>
+                    <div className='col-md-6 '>
+                      <div className='view-post-user'>{post.email}</div>
+                      <div className='view-post-time'>{moment(post.updatedAt).format('DD/MM/YYYY HH:MM')}</div>
+                    </div>
                   </div>
-                  <div className='col-md-4 '>
-                    <div className='view-post-user'>user001@gmail.com</div>
-                    <div className='view-post-time'>20:06</div>
+                  <div className='col-md-12 flex'>
+                    <div className='view-post-desc'>
+                      {post.description}
+                    </div>
                   </div>
-                </div>
-                <div className='col-md-12 flex'>
-                  <div className='view-post-desc'>
-                    This is an Amazing Video
-                  </div>
-                </div>
-                <div className='col-md-12 flex'>
-                  <div className='view-post'>
-                    <iframe
-                      width="100%"
-                      height="400px"
-                      // height="315"
-                      src="https://www.youtube.com/embed/ZaI7zkQ8nxA"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen>
+                  <div className='col-md-12 flex'>
+                    <div className='view-post'>
+                      <iframe
+                        width="100%"
+                        height="400px"
+                        // height="315"
+                        src={`https://www.youtube.com/embed/${post.videoId}`}
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
 
-                    </iframe>
+                      </iframe>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="card">
-              <div className="card-body" style={{ height: "400px" }}>
+            })}
 
-              </div>
-            </div>
-            <div className="card">
-              <div className="card-body" style={{ height: "400px" }}>
-
-              </div>
-            </div>
           </div>
         </div>
       </div>

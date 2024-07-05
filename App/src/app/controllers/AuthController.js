@@ -88,5 +88,15 @@ class AuthController {
             })
         }
     }
+    async getUserInfo(req, res, next) {
+        let data={
+            email :req.user.email
+        }
+        return res.status(200).send({
+            message: "Successfully",
+            data:data
+        })
+    }
+
 }
 module.exports = new AuthController();

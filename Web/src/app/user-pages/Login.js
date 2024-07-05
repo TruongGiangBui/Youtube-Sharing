@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Form } from 'react-bootstrap';
-
+import axios from 'axios';
+import configData from "../../config.json";
+import toast, { Toaster } from 'react-hot-toast';
+const SERVER_URL = configData.SERVER_URL
 export class Login extends Component {
   constructor(props) {
     super();
@@ -29,12 +32,48 @@ export class Login extends Component {
       this.setState({});
     }
   }
-  submit() {
-    this.props.history.push('/dashboard');
+  async submit() {
+    try {
+      let response = await axios.post(
+        SERVER_URL + `/api/auth/login`, {
+        "email": this.state.inputData.email,
+        "password": this.state.inputData.password
+      }
+      );
+      if(response.data){
+        localStorage.setItem('accessToken-yts',response.data.accessToken);
+        this.props.history.push('/');
+      }
+      // 
+    } catch (err) {
+      console.log(err.response.data)
+      if (err.response && err.response.data) {
+        toast.error(err.response.data.message, {
+          duration: 5000,
+          position: "top-center",
+        })
+      }
+    }
+
+  }
+  async componentDidMount(){
+    try {
+      let response = await axios.get(
+        SERVER_URL + `/api/auth/userInfo`,
+        { 'headers': { 'Authorization': `Bearer ${localStorage.getItem('accessToken-yts')}` }}
+      );
+      if(response.status==200){
+        this.props.history.push('/'); 
+      }
+      
+    } catch (err) {
+      console.log(err)
+    }
   }
   render() {
     return (
       <div>
+        <Toaster />
         <div className="d-flex align-items-center auth px-0">
           <div className="row w-100 mx-0">
             <div className="col-lg-4 mx-auto">
@@ -50,7 +89,7 @@ export class Login extends Component {
 
 
                   <div className="mt-3">
-                    <div onClick={this.submit.bind(this)} className="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" to="/dashboard">SIGN IN</div>
+                    <div onClick={this.submit.bind(this)} className="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">SIGN IN</div>
                   </div>
                   <div className="text-center mt-4 font-weight-light">
                     Dont have an account? <Link to="/user/register" className="text-primary">Register</Link>

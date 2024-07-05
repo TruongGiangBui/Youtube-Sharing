@@ -45,7 +45,7 @@ class App extends Component {
     console.log("ROUTE CHANGED");
 
     window.scrollTo(0, 0);
-    const fullPageLayoutRoutes = ['/user/login', '/user/register', '/error-pages/error-404', '/error-pages/error-500'];
+    const fullPageLayoutRoutes = ['/user/login', '/user/register'];
     for (let i = 0; i < fullPageLayoutRoutes.length; i++) {
       if (this.props.location.pathname === fullPageLayoutRoutes[i]) {
         this.setState({
