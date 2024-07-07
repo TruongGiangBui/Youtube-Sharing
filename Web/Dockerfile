@@ -1,7 +1,7 @@
 FROM node:12.2.0-alpine
 ENV TZ="Asia/Ho_Chi_Minh"
 
-ARG PORT=443
+ARG PORT=3000
 
 RUN node -v
 RUN npm config set unsafe-perm true
@@ -14,4 +14,4 @@ RUN npm install
 RUN npm run build
 
 EXPOSE ${PORT}
-CMD ["npm","run",'prod']
+CMD ["npm","start"]

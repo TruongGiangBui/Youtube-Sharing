@@ -1,2 +1,2 @@
-mkdir /app/logs
-mkdir /app/logs/youtube_sharing_app
+mkdir logs
+mkdir logs/youtube_sharing_app
