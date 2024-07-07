@@ -13,23 +13,6 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: youtube
     deploy:
       mode: global
-  # mysql:
-  #   image: mysql:latest
-  #   environment:
-  #     MYSQL_ROOT_PASSWORD: root
-  #   ports:
-  #     - "3306:3306"
-  #   volumes:
-  #     - ../../MongoData:/var/lib/mysql
-  #   networks:
-  #     - yts-network
-# volumes:
-#   mongo-data:
-#     driver: local
-#     driver_opts:
-#       type: none
-#       o: bind
-#       device: /mongo-data
 networks:
   yts-network:
     external: true

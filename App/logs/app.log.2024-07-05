@@ -1,0 +1,354 @@
+[2024-07-05T15:56:46.521] [INFO] app - Server running on 8081
+[2024-07-05T15:56:50.985] [DEBUG] app - Server running on 8081
+[2024-07-05T15:58:15.790] [DEBUG] app - Server running on 8081
+[2024-07-05T15:58:35.714] [DEBUG] app - Server running on 8081
+[2024-07-05T15:58:40.985] [DEBUG] app - Server running on 8081
+[2024-07-05T15:58:57.684] [DEBUG] app - Server running on 8081
+[2024-07-05T15:58:57.723] [DEBUG] app - Connected succesfully
+[2024-07-05T15:59:47.569] [DEBUG] app - Server running on 8081
+[2024-07-05T15:59:47.615] [DEBUG] app - Connected succesfully
+[2024-07-05T15:59:49.481] [DEBUG] app - Server running on 8081
+[2024-07-05T15:59:49.515] [DEBUG] app - Connected succesfully
+[2024-07-05T15:59:51.608] [DEBUG] app - Server running on 8081
+[2024-07-05T15:59:51.641] [DEBUG] app - Connected succesfully
+[2024-07-05T16:00:12.211] [DEBUG] app - Server running on 8081
+[2024-07-05T16:00:12.244] [DEBUG] app - Connected succesfully
+[2024-07-05T16:00:17.261] [DEBUG] app - Server running on 8081
+[2024-07-05T16:00:17.300] [DEBUG] app - Connected succesfully
+[2024-07-05T16:00:18.361] [DEBUG] app - user {
+  id: '6687acc1ad3acb81482be0a5',
+  email: 'truonggiang@gmail.com',
+  iat: 1720168134,
+  exp: 1720171734
+}
+[2024-07-05T16:00:40.483] [DEBUG] app - Server running on 8081
+[2024-07-05T16:00:40.519] [DEBUG] app - Connected succesfully
+[2024-07-05T16:01:51.762] [DEBUG] app - user {
+  id: '6687acc1ad3acb81482be0a5',
+  email: 'truonggiang@gmail.com',
+  iat: 1720168134,
+  exp: 1720171734
+}
+[2024-07-05T16:01:55.851] [DEBUG] app - user {
+  id: '6687acc1ad3acb81482be0a5',
+  email: 'truonggiang@gmail.com',
+  iat: 1720168134,
+  exp: 1720171734
+}
+[2024-07-05T16:02:32.392] [DEBUG] app - Server running on 8081
+[2024-07-05T16:02:32.433] [DEBUG] app - Connected succesfully
+[2024-07-05T16:02:36.324] [DEBUG] app - Server running on 8081
+[2024-07-05T16:02:36.359] [DEBUG] app - Connected succesfully
+[2024-07-05T16:02:42.307] [DEBUG] app - Server running on 8081
+[2024-07-05T16:02:42.344] [DEBUG] app - Connected succesfully
+[2024-07-05T16:03:05.271] [DEBUG] app - Server running on 8081
+[2024-07-05T16:03:05.309] [DEBUG] app - Connected succesfully
+[2024-07-05T16:03:09.075] [DEBUG] app - Server running on 8081
+[2024-07-05T16:03:09.109] [DEBUG] app - Connected succesfully
+[2024-07-05T16:03:11.870] [DEBUG] app - Server running on 8081
+[2024-07-05T16:03:11.913] [DEBUG] app - Connected succesfully
+[2024-07-05T16:03:16.815] [DEBUG] app - Server running on 8081
+[2024-07-05T16:03:16.860] [DEBUG] app - Connected succesfully
+[2024-07-05T16:03:23.765] [DEBUG] app - Server running on 8081
+[2024-07-05T16:03:23.808] [DEBUG] app - Connected succesfully
+[2024-07-05T16:03:25.846] [DEBUG] app - Server running on 8081
+[2024-07-05T16:03:25.884] [DEBUG] app - Connected succesfully
+[2024-07-05T16:03:28.343] [DEBUG] app - Server running on 8081
+[2024-07-05T16:03:28.377] [DEBUG] app - Connected succesfully
+[2024-07-05T16:03:30.356] [DEBUG] app - Server running on 8081
+[2024-07-05T16:03:30.397] [DEBUG] app - Connected succesfully
+[2024-07-05T16:03:55.254] [DEBUG] app - Server running on 8081
+[2024-07-05T16:03:55.287] [DEBUG] app - Connected succesfully
+[2024-07-05T16:04:02.710] [DEBUG] app - Server running on 8081
+[2024-07-05T16:04:02.745] [DEBUG] app - Connected succesfully
+[2024-07-05T16:04:07.338] [DEBUG] app - Server running on 8081
+[2024-07-05T16:04:07.372] [DEBUG] app - Connected succesfully
+[2024-07-05T16:04:10.600] [DEBUG] app - Server running on 8081
+[2024-07-05T16:04:10.633] [DEBUG] app - Connected succesfully
+[2024-07-05T16:04:12.352] [DEBUG] app - Server running on 8081
+[2024-07-05T16:04:12.387] [DEBUG] app - Connected succesfully
+[2024-07-05T16:04:27.461] [DEBUG] app - Server running on 8081
+[2024-07-05T16:04:27.515] [DEBUG] app - Connected succesfully
+[2024-07-05T16:04:32.773] [DEBUG] app - Server running on 8081
+[2024-07-05T16:04:32.814] [DEBUG] app - Connected succesfully
+[2024-07-05T16:04:36.156] [DEBUG] app - Server running on 8081
+[2024-07-05T16:04:36.193] [DEBUG] app - Connected succesfully
+[2024-07-05T16:04:37.482] [DEBUG] app - Server running on 8081
+[2024-07-05T16:04:37.514] [DEBUG] app - Connected succesfully
+[2024-07-05T16:04:59.811] [DEBUG] app - Server running on 8081
+[2024-07-05T16:04:59.860] [DEBUG] app - Connected succesfully
+[2024-07-05T16:05:01.823] [DEBUG] app - Server running on 8081
+[2024-07-05T16:05:01.854] [DEBUG] app - Connected succesfully
+[2024-07-05T16:05:08.238] [DEBUG] app - Server running on 8081
+[2024-07-05T16:05:08.285] [DEBUG] app - Connected succesfully
+[2024-07-05T16:05:16.448] [DEBUG] app - Server running on 8081
+[2024-07-05T16:05:16.482] [DEBUG] app - Connected succesfully
+[2024-07-05T16:05:19.809] [DEBUG] app - Server running on 8081
+[2024-07-05T16:05:19.848] [DEBUG] app - Connected succesfully
+[2024-07-05T16:05:21.194] [DEBUG] app - Server running on 8081
+[2024-07-05T16:05:21.231] [DEBUG] app - Connected succesfully
+[2024-07-05T16:05:39.792] [DEBUG] app - Server running on 8081
+[2024-07-05T16:05:39.823] [DEBUG] app - Connected succesfully
+[2024-07-05T16:05:42.242] [DEBUG] app - Server running on 8081
+[2024-07-05T16:05:42.276] [DEBUG] app - Connected succesfully
+[2024-07-05T16:05:47.687] [DEBUG] app - Server running on 8081
+[2024-07-05T16:05:47.721] [DEBUG] app - Connected succesfully
+[2024-07-05T16:05:52.794] [DEBUG] app - Server running on 8081
+[2024-07-05T16:05:52.838] [DEBUG] app - Connected succesfully
+[2024-07-05T16:06:01.545] [DEBUG] app - Server running on 8081
+[2024-07-05T16:06:01.584] [DEBUG] app - Connected succesfully
+[2024-07-05T16:07:29.213] [DEBUG] app - Server running on 8081
+[2024-07-05T16:07:29.257] [DEBUG] app - Connected succesfully
+[2024-07-05T16:07:32.261] [DEBUG] app - Server running on 8081
+[2024-07-05T16:07:32.294] [DEBUG] app - Connected succesfully
+[2024-07-05T16:07:39.609] [DEBUG] app - Server running on 8081
+[2024-07-05T16:07:39.644] [DEBUG] app - Connected succesfully
+[2024-07-05T16:10:21.811] [DEBUG] app - Server running on 8081
+[2024-07-05T16:10:21.851] [DEBUG] app - Connected succesfully
+[2024-07-05T16:26:26.289] [DEBUG] app - Server running on 8081
+[2024-07-05T16:26:26.326] [DEBUG] app - Connected succesfully
+[2024-07-05T16:26:32.041] [DEBUG] app - Server running on 8081
+[2024-07-05T16:26:32.076] [DEBUG] app - Connected succesfully
+[2024-07-05T16:26:36.636] [DEBUG] app - Server running on 8081
+[2024-07-05T16:26:36.668] [DEBUG] app - Connected succesfully
+[2024-07-05T16:28:35.939] [DEBUG] app - Server running on 8081
+[2024-07-05T16:28:35.989] [DEBUG] app - Connected succesfully
+[2024-07-05T16:28:43.942] [DEBUG] app - Server running on 8081
+[2024-07-05T16:28:43.978] [DEBUG] app - Connected succesfully
+[2024-07-05T16:28:47.687] [DEBUG] app - Server running on 8081
+[2024-07-05T16:28:47.721] [DEBUG] app - Connected succesfully
+[2024-07-05T16:28:52.608] [DEBUG] app - Server running on 8081
+[2024-07-05T16:28:52.649] [DEBUG] app - Connected succesfully
+[2024-07-05T16:28:54.002] [DEBUG] app - Server running on 8081
+[2024-07-05T16:28:54.038] [DEBUG] app - Connected succesfully
+[2024-07-05T16:29:00.976] [DEBUG] app - Server running on 8081
+[2024-07-05T16:29:01.010] [DEBUG] app - Connected succesfully
+[2024-07-05T16:29:02.740] [DEBUG] app - Server running on 8081
+[2024-07-05T16:29:02.789] [DEBUG] app - Connected succesfully
+[2024-07-05T16:29:09.701] [ERROR] app - login error:  ReferenceError: validateEmail is not defined
+    at login (H:\Youtube Sharing\App\src\app\controllers\AuthController.js:58:13)
+    at Layer.handle [as handle_request] (H:\Youtube Sharing\App\node_modules\express\lib\router\layer.js:95:5)
+    at next (H:\Youtube Sharing\App\node_modules\express\lib\router\route.js:144:13)
+    at cors (H:\Youtube Sharing\App\src\app\middleware\AuthMiddleware.js:19:9)
+    at Layer.handle [as handle_request] (H:\Youtube Sharing\App\node_modules\express\lib\router\layer.js:95:5)
+    at next (H:\Youtube Sharing\App\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (H:\Youtube Sharing\App\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (H:\Youtube Sharing\App\node_modules\express\lib\router\layer.js:95:5)
+    at H:\Youtube Sharing\App\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (H:\Youtube Sharing\App\node_modules\express\lib\router\index.js:346:12)
+    at next (H:\Youtube Sharing\App\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (H:\Youtube Sharing\App\node_modules\express\lib\router\index.js:175:3)
+    at router (H:\Youtube Sharing\App\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (H:\Youtube Sharing\App\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (H:\Youtube Sharing\App\node_modules\express\lib\router\index.js:328:13)
+    at H:\Youtube Sharing\App\node_modules\express\lib\router\index.js:286:9
+[2024-07-05T16:29:30.591] [DEBUG] app - Server running on 8081
+[2024-07-05T16:29:30.625] [DEBUG] app - Connected succesfully
+[2024-07-05T16:29:57.290] [DEBUG] app - Server running on 8081
+[2024-07-05T16:29:57.322] [DEBUG] app - Connected succesfully
+[2024-07-05T16:30:00.492] [DEBUG] app - Server running on 8081
+[2024-07-05T16:30:00.524] [DEBUG] app - Connected succesfully
+[2024-07-05T16:30:15.399] [ERROR] app - getNewFeed error:  ReferenceError: frompost is not defined
+    at getNewFeed (H:\Youtube Sharing\App\src\app\controllers\PostController.js:41:71)
+    at Layer.handle [as handle_request] (H:\Youtube Sharing\App\node_modules\express\lib\router\layer.js:95:5)
+    at next (H:\Youtube Sharing\App\node_modules\express\lib\router\route.js:144:13)
+    at H:\Youtube Sharing\App\src\app\middleware\AuthMiddleware.js:32:17
+    at H:\Youtube Sharing\App\node_modules\jsonwebtoken\verify.js:261:12
+    at getSecret (H:\Youtube Sharing\App\node_modules\jsonwebtoken\verify.js:97:14)
+    at Object.module.exports [as verify] (H:\Youtube Sharing\App\node_modules\jsonwebtoken\verify.js:101:10)
+    at authorize (H:\Youtube Sharing\App\src\app\middleware\AuthMiddleware.js:29:17)
+    at Layer.handle [as handle_request] (H:\Youtube Sharing\App\node_modules\express\lib\router\layer.js:95:5)
+    at next (H:\Youtube Sharing\App\node_modules\express\lib\router\route.js:144:13)
+    at cors (H:\Youtube Sharing\App\src\app\middleware\AuthMiddleware.js:19:9)
+    at Layer.handle [as handle_request] (H:\Youtube Sharing\App\node_modules\express\lib\router\layer.js:95:5)
+    at next (H:\Youtube Sharing\App\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (H:\Youtube Sharing\App\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (H:\Youtube Sharing\App\node_modules\express\lib\router\layer.js:95:5)
+    at H:\Youtube Sharing\App\node_modules\express\lib\router\index.js:284:15
+[2024-07-05T16:30:32.117] [DEBUG] app - Server running on 8081
+[2024-07-05T16:30:32.154] [DEBUG] app - Connected succesfully
+[2024-07-05T16:30:44.841] [ERROR] app - getNewFeed error:  MongoError: BSON field 'FindCommandRequest.skip' is the wrong type 'string', expected types '[long, int, decimal, double']
+    at MessageStream.messageHandler (H:\Youtube Sharing\App\node_modules\mongodb\lib\cmap\connection.js:299:20)
+    at MessageStream.emit (events.js:209:13)
+    at processIncomingData (H:\Youtube Sharing\App\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (H:\Youtube Sharing\App\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:428:12)
+    at writeOrBuffer (_stream_writable.js:412:5)
+    at MessageStream.Writable.write (_stream_writable.js:302:11)
+    at Socket.ondata (_stream_readable.js:722:22)
+    at Socket.emit (events.js:209:13)
+    at addChunk (_stream_readable.js:305:12)
+    at readableAddChunk (_stream_readable.js:286:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+  ok: 0,
+  code: 14,
+  codeName: 'TypeMismatch',
+  name: 'MongoError'
+}
+[2024-07-05T16:31:44.368] [DEBUG] app - Server running on 8081
+[2024-07-05T16:31:44.411] [DEBUG] app - Connected succesfully
+[2024-07-05T16:39:38.958] [DEBUG] app - Server running on 8081
+[2024-07-05T16:39:38.997] [DEBUG] app - Connected succesfully
+[2024-07-05T16:39:52.183] [DEBUG] app - Server running on 8081
+[2024-07-05T16:39:52.224] [DEBUG] app - Connected succesfully
+[2024-07-05T16:39:54.084] [DEBUG] app - Server running on 8081
+[2024-07-05T16:39:54.120] [DEBUG] app - Connected succesfully
+[2024-07-05T16:39:59.248] [DEBUG] app - Server running on 8081
+[2024-07-05T16:39:59.284] [DEBUG] app - Connected succesfully
+[2024-07-05T17:01:04.946] [DEBUG] app - Server running on 8081
+[2024-07-05T17:01:05.035] [DEBUG] app - Connected succesfully
+[2024-07-05T17:01:11.961] [DEBUG] app - Server running on 8081
+[2024-07-05T17:01:11.998] [DEBUG] app - Connected succesfully
+[2024-07-05T17:01:26.787] [DEBUG] app - Server running on 8081
+[2024-07-05T17:01:26.826] [DEBUG] app - Connected succesfully
+[2024-07-05T17:01:30.999] [DEBUG] app - Server running on 8081
+[2024-07-05T17:01:31.044] [DEBUG] app - Connected succesfully
+[2024-07-05T17:01:40.046] [DEBUG] app - Server running on 8081
+[2024-07-05T17:01:40.082] [DEBUG] app - Connected succesfully
+[2024-07-05T17:01:50.841] [DEBUG] app - Server running on 8081
+[2024-07-05T17:01:50.874] [DEBUG] app - Connected succesfully
+[2024-07-05T17:01:53.335] [DEBUG] app - Server running on 8081
+[2024-07-05T17:01:53.372] [DEBUG] app - Connected succesfully
+[2024-07-05T17:01:58.580] [DEBUG] app - Server running on 8081
+[2024-07-05T17:01:58.620] [DEBUG] app - Connected succesfully
+[2024-07-05T17:02:04.472] [DEBUG] app - Server running on 8081
+[2024-07-05T17:02:04.515] [DEBUG] app - Connected succesfully
+[2024-07-05T17:03:19.634] [DEBUG] app - Server running on 8081
+[2024-07-05T17:03:19.676] [DEBUG] app - Connected succesfully
+[2024-07-05T17:47:40.913] [DEBUG] app - Server running on 8081
+[2024-07-05T17:47:40.955] [DEBUG] app - Connected succesfully
+[2024-07-05T17:47:42.938] [DEBUG] app - Server running on 8081
+[2024-07-05T17:47:42.988] [DEBUG] app - Connected succesfully
+[2024-07-05T17:47:50.855] [DEBUG] app - Server running on 8081
+[2024-07-05T17:47:50.891] [DEBUG] app - Connected succesfully
+[2024-07-05T17:47:53.208] [DEBUG] app - Server running on 8081
+[2024-07-05T17:47:53.250] [DEBUG] app - Connected succesfully
+[2024-07-05T17:47:55.566] [DEBUG] app - Server running on 8081
+[2024-07-05T17:47:55.606] [DEBUG] app - Connected succesfully
+[2024-07-05T17:48:24.617] [DEBUG] app - user {
+  id: '6687acc1ad3acb81482be0a5',
+  email: 'truonggiang@gmail.com',
+  iat: 1720176495,
+  exp: 1720180095
+}
+[2024-07-05T17:48:27.379] [DEBUG] app - user {
+  id: '6687acc1ad3acb81482be0a5',
+  email: 'truonggiang@gmail.com',
+  iat: 1720176495,
+  exp: 1720180095
+}
+[2024-07-05T17:48:28.143] [DEBUG] app - user {
+  id: '6687acc1ad3acb81482be0a5',
+  email: 'truonggiang@gmail.com',
+  iat: 1720176495,
+  exp: 1720180095
+}
+[2024-07-05T17:48:28.913] [DEBUG] app - user {
+  id: '6687acc1ad3acb81482be0a5',
+  email: 'truonggiang@gmail.com',
+  iat: 1720176495,
+  exp: 1720180095
+}
+[2024-07-05T21:24:46.281] [DEBUG] app - Server running on 8081
+[2024-07-05T21:25:06.573] [DEBUG] app - Connected succesfully
+[2024-07-05T21:31:39.312] [DEBUG] app - Server running on 8081
+[2024-07-05T21:31:39.364] [DEBUG] app - Connected succesfully
+[2024-07-05T21:31:49.522] [DEBUG] app - Server running on 8081
+[2024-07-05T21:31:49.559] [DEBUG] app - Connected succesfully
+[2024-07-05T21:31:53.176] [DEBUG] app - Server running on 8081
+[2024-07-05T21:31:53.216] [DEBUG] app - Connected succesfully
+[2024-07-05T21:32:35.093] [DEBUG] app - Server running on 8081
+[2024-07-05T21:32:35.130] [DEBUG] app - Connected succesfully
+[2024-07-05T21:32:40.919] [DEBUG] app - Server running on 8081
+[2024-07-05T21:32:40.953] [DEBUG] app - Connected succesfully
+[2024-07-05T21:32:49.192] [DEBUG] app - Server running on 8081
+[2024-07-05T21:32:49.228] [DEBUG] app - Connected succesfully
+[2024-07-05T21:33:00.267] [DEBUG] app - Server running on 8081
+[2024-07-05T21:33:00.303] [DEBUG] app - Connected succesfully
+[2024-07-05T21:33:05.267] [DEBUG] app - Server running on 8081
+[2024-07-05T21:33:05.305] [DEBUG] app - Connected succesfully
+[2024-07-05T21:33:10.679] [DEBUG] app - Server running on 8081
+[2024-07-05T21:33:10.720] [DEBUG] app - Connected succesfully
+[2024-07-05T22:06:06.820] [DEBUG] app - Server running on 8081
+[2024-07-05T22:06:06.880] [DEBUG] app - Connected succesfully
+[2024-07-05T22:06:09.549] [DEBUG] app - Server running on 8081
+[2024-07-05T22:06:09.585] [DEBUG] app - Connected succesfully
+[2024-07-05T22:06:29.474] [DEBUG] app - Server running on 8081
+[2024-07-05T22:06:29.514] [DEBUG] app - Connected succesfully
+[2024-07-05T22:06:33.916] [DEBUG] app - Server running on 8081
+[2024-07-05T22:06:33.954] [DEBUG] app - Connected succesfully
+[2024-07-05T22:06:36.885] [DEBUG] app - Server running on 8081
+[2024-07-05T22:06:36.926] [DEBUG] app - Connected succesfully
+[2024-07-05T22:06:40.458] [DEBUG] app - Server running on 8081
+[2024-07-05T22:06:40.504] [DEBUG] app - Connected succesfully
+[2024-07-05T22:06:43.456] [DEBUG] app - Server running on 8081
+[2024-07-05T22:06:43.492] [DEBUG] app - Connected succesfully
+[2024-07-05T22:06:46.819] [DEBUG] app - Server running on 8081
+[2024-07-05T22:06:46.859] [DEBUG] app - Connected succesfully
+[2024-07-05T22:06:49.358] [DEBUG] app - Server running on 8081
+[2024-07-05T22:06:49.405] [DEBUG] app - Connected succesfully
+[2024-07-05T22:06:51.377] [DEBUG] app - Server running on 8081
+[2024-07-05T22:06:51.413] [DEBUG] app - Connected succesfully
+[2024-07-05T22:14:43.168] [DEBUG] app - Server running on 8081
+[2024-07-05T22:14:43.243] [DEBUG] app - Connected succesfully
+[2024-07-05T22:18:28.913] [DEBUG] app - user {
+  id: '6687acc1ad3acb81482be0a5',
+  email: 'truonggiang@gmail.com',
+  iat: 1720191748,
+  exp: 1720195348
+}
+[2024-07-05T22:26:25.818] [DEBUG] app - user {
+  id: '6687ccc5a6996660c83b071a',
+  email: 'truonggiang1@gmail.com',
+  iat: 1720193149,
+  exp: 1720196749
+}
+[2024-07-05T22:37:48.954] [DEBUG] app - user {
+  id: '6687cd80a6996660c83b071d',
+  email: 'truonggiangbui@gmail.com',
+  iat: 1720193850,
+  exp: 1720197450
+}
+[2024-07-05T22:38:45.205] [DEBUG] app - Server running on 8081
+[2024-07-05T22:38:45.255] [DEBUG] app - Connected succesfully
+[2024-07-05T22:39:25.806] [DEBUG] app - Server running on 8081
+[2024-07-05T22:39:25.865] [DEBUG] app - Connected succesfully
+[2024-07-05T22:39:31.623] [DEBUG] app - Server running on 8081
+[2024-07-05T22:39:31.673] [DEBUG] app - Connected succesfully
+[2024-07-05T22:40:42.403] [DEBUG] app - Server running on 8081
+[2024-07-05T22:40:42.458] [DEBUG] app - Connected succesfully
+[2024-07-05T22:40:48.054] [DEBUG] app - Server running on 8081
+[2024-07-05T22:40:48.104] [DEBUG] app - Connected succesfully
+[2024-07-05T22:47:32.745] [DEBUG] app - Server running on 8081
+[2024-07-05T22:47:32.785] [DEBUG] app - Connected succesfully
+[2024-07-05T22:58:14.107] [DEBUG] app - user {
+  id: '6687cd80a6996660c83b071d',
+  email: 'truonggiangbui@gmail.com',
+  iat: 1720193850,
+  exp: 1720197450
+}
+[2024-07-05T23:00:25.462] [DEBUG] app - user {
+  id: '6687acc1ad3acb81482be0a5',
+  email: 'truonggiang@gmail.com',
+  iat: 1720195196,
+  exp: 1720198796
+}
+[2024-07-05T23:01:16.053] [DEBUG] app - user {
+  id: '6687acc1ad3acb81482be0a5',
+  email: 'truonggiang@gmail.com',
+  iat: 1720195196,
+  exp: 1720198796
+}
+[2024-07-05T23:02:23.454] [DEBUG] app - user {
+  id: '6687acc1ad3acb81482be0a5',
+  email: 'truonggiang@gmail.com',
+  iat: 1720195196,
+  exp: 1720198796
+}
+[2024-07-05T23:03:20.907] [DEBUG] app - user {
+  id: '6687acc1ad3acb81482be0a5',
+  email: 'truonggiang@gmail.com',
+  iat: 1720195196,
+  exp: 1720198796
+}

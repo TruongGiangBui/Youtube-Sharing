@@ -1,0 +1,31 @@
+version: "3"
+services:
+  app:  
+    image: youtube_sharing_app
+    networks:
+      - yts-network
+    volumes:
+      - /app/logs/youtube_sharing_app:/usr/src/app/App/logs
+      - /app/config/youtube_sharing_app/.env:/usr/src/app/App/.env
+    ports:
+     - "8081:8081"
+    deploy:
+      mode: global
+  web:  
+    image: youtube_sharing_web
+    networks:
+      - yts-network
+    volumes:
+      - /app/config/youtube_sharing_web/config.json:/usr/src/app/Web/src/config.json
+    ports:
+     - "3000:3000"
+    deploy:
+      mode: global
+volumes:
+  cache-redis:
+    driver: local
+networks:
+  yts-network:
+    external: true
+#docker stack deploy -c swarm/swarm.youtube_sharing.yml deploytool --with-registry-auth --resolve-image always
+# 192.168.26.3 stash.fss.com.vn

@@ -30,6 +30,7 @@ check_stack () {
                 fi
         done
 }
+docker stack rm db
 docker stack rm yts
 
 docker network rm yts-network
@@ -51,15 +52,13 @@ echo -e "${YELLOW}Creating new yts-network${GREEN}"
 docker network create yts-network -d overlay --attachable
 echo -e "${NC}"
 
-# #Pull docker images
-# echo -e "${PURPLE}=======================================================================================${NC}"
-# echo -e "${YELLOW}Start pull docker images${NC}"
-# docker pull docker-registry.fss.com.vn/cbond/deploy_tools_app:latest
-# wait
-# docker pull docker-registry.fss.com.vn/cbond/deploy_tools_web:latest
-# wait
-
+#Pull docker images
+echo -e "${PURPLE}=======================================================================================${NC}"
+echo -e "${YELLOW}Start pull docker images${NC}"
+docker pull mongo:latest
 # Stack tools
 echo -e "Start stack ${YELLOW}yts${NC}"
-docker stack deploy -c swarm/mongo.yml yts --with-registry-auth --resolve-image always
+docker stack deploy -c swarm/mongo.yml db --with-registry-auth --resolve-image always
+check_stack "db"
+docker stack deploy -c swarm/webapp.yml yts --with-registry-auth --resolve-image always
 check_stack "yts"
