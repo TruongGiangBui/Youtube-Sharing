@@ -26,10 +26,11 @@
     "socket.io-client": "^4.6.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=80 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prod":"PORT=80 react-scripts start"
   },
   "eslintConfig": {
     "extends": "react-app"
