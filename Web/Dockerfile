@@ -1,7 +1,7 @@
 FROM node:12.2.0-alpine
 ENV TZ="Asia/Ho_Chi_Minh"
 
-ARG PORT=80
+ARG PORT=443
 
 RUN node -v
 RUN npm config set unsafe-perm true

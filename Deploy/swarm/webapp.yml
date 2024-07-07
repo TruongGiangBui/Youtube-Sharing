@@ -18,7 +18,7 @@ services:
     volumes:
       - /app/config/youtube_sharing_web/config.json:/usr/src/app/Web/src/config.json
     ports:
-     - "3000:3000"
+     - "443:443"
     deploy:
       mode: global
 volumes:
