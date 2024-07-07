@@ -144,3 +144,48 @@
 [2024-07-07T12:08:59.249] [DEBUG] app - Connected succesfully
 [2024-07-07T12:09:16.286] [DEBUG] app - Server running on 8081
 [2024-07-07T12:09:16.324] [DEBUG] app - Connected succesfully
+[2024-07-07T14:35:16.785] [DEBUG] app - Server running on 8081
+[2024-07-07T14:35:16.824] [DEBUG] app - Connected succesfully
+[2024-07-07T14:42:33.981] [DEBUG] app - Server running on 8081
+[2024-07-07T14:43:03.983] [DEBUG] app - Connect failure MongooseServerSelectionError: connection timed out
+    at NativeConnection.Connection.openUri (H:\YoutubeSharing\App\node_modules\mongoose\lib\connection.js:847:32)
+    at H:\YoutubeSharing\App\node_modules\mongoose\lib\index.js:351:10
+    at H:\YoutubeSharing\App\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (H:\YoutubeSharing\App\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (H:\YoutubeSharing\App\node_modules\mongoose\lib\index.js:1149:10)
+    at Mongoose.connect (H:\YoutubeSharing\App\node_modules\mongoose\lib\index.js:350:20)
+    at Object.connect (H:\YoutubeSharing\App\src\services\mongo.js:6:20)
+    at Object.<anonymous> (H:\YoutubeSharing\App\src\index.js:11:7)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11 {
+  message: 'connection timed out',
+  reason: TopologyDescription {
+    type: 'Single',
+    setName: null,
+    maxSetVersion: null,
+    maxElectionId: null,
+    servers: Map { '172.21.56.36:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    compatibilityError: null,
+    logicalSessionTimeoutMinutes: null,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    commonWireVersion: null
+  }
+}
+[2024-07-07T14:43:09.854] [ERROR] app - login error:  MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (H:\YoutubeSharing\App\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:198:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+[2024-07-07T14:43:11.635] [ERROR] app - login error:  MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (H:\YoutubeSharing\App\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:198:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+[2024-07-07T14:44:30.134] [DEBUG] app - Server running on 8081
+[2024-07-07T14:44:30.171] [DEBUG] app - Connected succesfully
